@@ -1,0 +1,144 @@
+<style>
+.contact-fix{display:flex;align-items:center;min-height:500px}
+.contact-card,.contact-form{border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.contact-card{animation:leftIn .8s ease}
+.contact-form{background:#fff;padding:40px;animation:rightIn .8s ease}
+@keyframes leftIn{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:none}}
+@keyframes rightIn{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:none}}
+.success-msg{
+    display:none;
+    margin-top:20px;
+    padding:12px 18px;
+    background:#e9f9ef;
+    color:#1e7e34;
+    border-radius:10px;
+    font-weight:600;
+    align-items:center;
+    gap:10px;
+    animation:successIn .5s ease;
+}
+.success-msg i{font-size:20px}
+@keyframes successIn{
+    from{opacity:0;transform:translateY(10px)}
+    to{opacity:1;transform:none}
+}
+</style>
+
+<div class="container-fluid py-5">
+  <div class="container py-5">
+    <div class="row contact-fix">
+      <div class="col-lg-5 mb-4">
+        <div class="bg-light d-flex flex-column justify-content-center px-5 contact-card" style="height:450px;">
+          
+          <div class="d-flex align-items-center mb-5">
+            <div class="btn-icon bg-primary mr-4">
+              <i class="fa fa-2x fa-map-marker-alt text-white"></i>
+            </div>
+            <div>
+              <h4 data-tr="Adres" data-en="Address">Adres</h4>
+              <p class="m-0"
+                 data-tr="Güzelyurt Mh. Dr. İbrahim Erdemir Cad. No15/D TOKİ 2 Yanı P.K. 45030 YUNUSEMRE/MANİSA"
+                 data-en="Guzelyurt District, Dr. Ibrahim Erdemir Street No:15/D, TOKI 2, Yunusemre / Manisa">
+                Güzelyurt Mh. Dr. İbrahim Erdemir Cad. No15/D TOKİ 2 Yanı P.K. 45030 YUNUSEMRE/MANİSA
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mb-5">
+            <div class="btn-icon bg-secondary mr-4">
+              <i class="fa fa-2x fa-phone-alt text-white"></i>
+            </div>
+            <div>
+              <h4 data-tr="Telefon" data-en="Phone">Telefon</h4>
+              <p class="m-0"
+                 data-tr="+90 542 116 7295"
+                 data-en="+90 542 116 7295">
+                +90 542 116 7295
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <div class="btn-icon bg-warning mr-4">
+              <i class="fa fa-2x fa-envelope text-white"></i>
+            </div>
+            <div>
+              <h4 data-tr="Email" data-en="Email">Email</h4>
+              <p class="m-0"
+                 data-tr="valkyriefrc@gmail.com"
+                 data-en="valkyriefrc@gmail.com">
+                valkyriefrc@gmail.com
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="text-center mb-4">
+          <h6 class="text-secondary text-uppercase"
+              data-tr="İletişim"
+              data-en="Contact">
+              İletişim
+          </h6>
+          <h1 class="display-4"
+              data-tr="Bizimle İletişime Geçin"
+              data-en="Get In Touch">
+              Bizimle İletişime Geçin
+          </h1>
+        </div>
+
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-6">
+                <input type="text" data-tr="İsim" data-en="Name" name="isim" class="form-control border-0 border-bottom"
+                       
+                       data-tr="İsim"
+                       data-en="Name"
+                       placeholder="İsim"
+                       required>
+              </div>
+              <div class="col-6">
+                <input type="email" name="email" class="form-control border-0 border-bottom"
+                       placeholder="Email"
+                       data-tr="Email"
+                       data-en="Email"
+                       required>
+              </div>
+            </div>
+
+            <input type="text" name="konu" class="form-control border-0 border-bottom"
+                   placeholder="Konu"
+                   data-tr="Konu"
+                   data-en="Subject"
+                   required>
+
+            <textarea name="mesaj" rows="5" class="form-control border-0 border-bottom"
+                      placeholder="Mesaj"
+                      data-tr="Mesaj"
+                      data-en="Message"
+                      required></textarea>
+
+            <button class="btn btn-primary py-3 px-5 mt-3"
+                    type="submit"
+                    data-tr="Gönder"
+                    data-en="Send">
+              Gönder
+            </button>
+
+            <div class="success-msg" id="successMsg">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-tr="Mesaj başarıyla gönderildi"
+                    data-en="Message sent successfully">
+                Mesaj başarıyla gönderildi
+              </span>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
