@@ -12,6 +12,6 @@
   </p>
 
   <p align="center">
-    <img src="img/site-preview.png" width="400">
+    <img src="img/site-preview.png" width="900">
   </p>
 </section>
