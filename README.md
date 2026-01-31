@@ -1,8 +1,8 @@
 <section id="site-info">
-  <h2>Site Information</h2>
+  <h2>team9043 Site Information</h2>
   <p>
     team9043.com, <strong>FIRST Robotics Competition (FRC)</strong> kapsamında
-    faaliyet gösteren Team 9043 için,
+    faaliyet gösteren Valkyrie 9043 için,
     takım üyesi tarafımca
     geliştirilmiş <strong>statik bir web sitesidir</strong>.
   </p>
