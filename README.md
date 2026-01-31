@@ -7,12 +7,11 @@
     geliştirilmiş <strong>statik bir web sitesidir</strong>.
   </p>
   <p>
-    Site; takımın çalışmalarını sade ve erişilebilir bir şekilde
-    sunmak amacıyla oluşturulmuştur.
-  </p>
-  <p>
     Alan adı <strong>team9043.com</strong> üzerinden yayınlanmakta olup,
-    dağıtım ve güvenlik altyapısında
-    <strong>Cloudflare</strong> kullanılmaktadır.
+    altyapı ve dağıtım sürecinde <strong>Cloudflare</strong> kullanılmaktadır.
+  </p>
+
+  <p align="center">
+    <img src="images/site-preview.jpg" width="400">
   </p>
 </section>
